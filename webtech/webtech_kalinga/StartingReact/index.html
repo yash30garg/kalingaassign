@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="css/style.css" rel="stylesheet">-->
+        <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+    </head>
+    <body>
+        <div id="example"> </div>
+ <script type="text/babel">
+ var bacon=React.createClass(
+     {
+         render:function()
+         {
+             return (<h2>sample component</h2);
+         }
+     }
+ );
+ ReactDom.render(<bacon \> ,document.getElementById('example'));
+     
+ </script>
+    </body>
+</html>

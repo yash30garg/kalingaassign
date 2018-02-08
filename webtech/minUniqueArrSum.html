@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-sidebar" style="width: 44.75%;">
+        <div class="title-name-wrapper" style="margin-left: 70px;">
+            <h4 class="qbookmark fullscreen-bookmark"><a class="js-bookmark" data-qid="2ps1bnpd947" style="cursor:pointer; position: relative; display: inline;"><i class="icon-star-empty" title="Mark for later"></i></a></h4>
+            <h3 class="title qtitle fullscreen-qtitle" aria-label="Question Title">Minimum Unique Array Sum</h3>
+            <h6 class="bold pull-right qpoints"></h6>
+        </div>
+        <div class="js-left-content psT psB psR pjL" style="margin-left: 70px;"><div style="display:none;font-size:1px;color:#333333;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;">Modify an array so its values are unique and have a minimum sum.</div>
+
+<p>Given an array, <em>arr</em>, we want it to make it <em>unique</em> by incrementing any duplicate elements in <em>arr</em> such that the sum of <em>arr<sub>unique</sub></em>'s elements is <em>minimal</em>. In other words, if <em>two or more</em> elements in <em>arr</em> are not unique, we must <em>increase</em> the value of the duplicate element(s) to some other number(s) such that <em>arr</em> consists of unique elements that sum to a number that is as small as possible. For example, if <em>arr = [3, 2, 1, 2, 7]</em>, then <em>arr<sub>unique</sub> = [3, 2, 1, 4, 7]</em> and its elements sum to a minimal value of <em>3 + 2 + 1 + 4 + 7 = 17</em>.</p>
+
+<p>&nbsp;</p>
+
+<p>Complete the <em>getMinimumUniqueSum</em> function in the editor below. It has one parameter: an array of <em>n</em> integers, <em>arr</em>. The function must return an integer denoting the sum of <em>arr<sub>unique</sub></em>'s elements.</p>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;" title="Locked stub code reads input from stdin and passes it to the function.">Input Format</p>
+
+<p>The first line contains an integer, <em>n</em>, denoting size of array <em>arr</em>.</p>
+
+<p>Each line <em>i</em> of the <em>n</em> subsequent lines (where <em>0 ≤ i &lt; n</em>) contains an integer describing element <em>i</em> in array <em>arr</em>.</p>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Constraints</p>
+
+<ul>
+	<li><em>1 ≤ n ≤ 2000</em></li>
+	<li><em>1 ≤ arr<sub>i</sub> ≤ 3000</em></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;" title="This is printed to stdout by locked stub code in the editor.">Output Format</p>
+
+<p>The function must return an integer denoting the sum of <em>arr<sub>unique</sub></em>'s elements.</p>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Sample Input 0</p>
+
+<pre>3
+1
+2
+2</pre>
+
+<p style="font-weight:bold;">Sample Output 0</p>
+
+<pre>6</pre>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Explanation 0</p>
+
+<p><em>arr = [1, 2, 2]</em></p>
+
+<p><em>arr<sub>0</sub></em> is unique, but <em>arr<sub>1</sub></em> and <em>arr<sub>2</sub></em> are duplicate elements. We increase the value of <em>arr<sub>2</sub></em> by <em>1</em> (the minimum amount we can increase the value by so that each element is unique) to get <em>arr<sub>unique</sub> = [1, 2, 3]</em>. We then return the sum of these elements, which is <em>1 + 2 + 3 = 6</em>.</p>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Sample Input 1</p>
+
+<pre>3
+1
+2
+3</pre>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Sample Output 1</p>
+
+<pre>6</pre>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Explanation 1</p>
+
+<p><em>arr = [1, 2, 3]</em></p>
+
+<p>Each number in <em>arr</em> is unique, so we do not need to modify any of its elements (i.e., <em>arr ≡ arr<sub>unique</sub></em>). We return the sum of all elements in the array, which is <em>1 + 2 + 3 = 6</em>.</p>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Sample Input 2</p>
+
+<pre>4
+2
+2
+4
+5</pre>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Sample Output 2</p>
+
+<pre>14</pre>
+
+<p>&nbsp;</p>
+
+<p style="font-weight:bold;">Explanation 2</p>
+
+<p><em>arr = [2, 2, 4, 5]</em></p>
+
+<p>Because <em>arr<sub>0</sub></em> and <em>arr<sub>1</sub></em> are both duplicates, we must increase one of the two elements in such a way that they are two unique elements having a minimal sum. When we do this, we get <em>arr<sub>unique</sub> = [2, 3, 4, 5]</em>. We then return the sum of these elements, which is <em>2 + 3 + 4 + 5 = 14</em>.</p>
+
+<p>&nbsp;</p>
+</div>
+    </div>
+</body>
+</html>

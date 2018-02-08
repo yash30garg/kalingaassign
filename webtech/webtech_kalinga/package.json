@@ -1,0 +1,16 @@
+{
+  "name": "webtech_kalinga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "rxjs-es": "^5.0.0-beta.12",
+    "style-loader": "^0.19.1"
+  }
+}
